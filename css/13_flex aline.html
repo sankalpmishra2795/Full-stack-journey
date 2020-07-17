@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex aline</title>
+  <style>
+    #container{
+      background: #555;
+      display: flex;
+      justify-content: space-evenly;
+      /* align-items: center; */
+      /* flex-wrap: wrap; */
+    /* option 
+    space-around
+    space-between
+    center
+    start
+    end
+     */
+     height: 600px;
+     align-items: baseline;
+     /* flex-end
+     center
+     stretch
+     flex-star
+     baceline */
+     /* align-content: space-between; */
+
+    } 
+.item{
+  background: #ccc;
+  border: solid #f4f4f4 1px;
+  text-align: center;
+  padding: 1rem;
+  margin: .5rem;
+  flex-basis: 300px;
+}
+.item2{
+  /* aline single */
+  align-self: center;
+  order: 2;
+}
+.item3{order:1;}
+.item1{order: 3;}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item item1"><h3>item 1<h3></div>
+    <div class="item item2"><h3>item 2<h3></div>
+    <div class="item item3"><h3>item 3<h3></div>
+  </div>
+</body>
+</html>
+
+
